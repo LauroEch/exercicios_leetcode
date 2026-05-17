@@ -15,7 +15,7 @@ int* findDiagonalOrder(int** mat, int matSize, int* matColSize, int* returnSize)
     
     while ( p < tamMatriz ) {
 
-    while ( i >= 0 && j < *matColSize ) {
+        while ( i >= 0 && j < *matColSize ) {
             vetor[p] = mat[i][j];
             p++;
 
@@ -34,7 +34,7 @@ int* findDiagonalOrder(int** mat, int matSize, int* matColSize, int* returnSize)
         while( j >= 0 && i < matSize ){
             vetor[p] = mat[i][j];
             p++;
-         
+        
             if ( i + 1 >= matSize ) {
                 j++;
                 break;
